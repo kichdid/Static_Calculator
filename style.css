@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Digital;
+  src: url(assets/fonts/digital-7.ttf);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: #575757;
+  width: 450px;
+  height: 500px;
+  border-radius: 25px;
+  box-shadow: 0px 15px 0px 0px #424242, 75px 75px 0px 0px #7a976b;
+  padding: 25px;
+}
+
+.screen {
+  font-family: Digital;
+  background-color: #bcd1c0;
+  height: 100px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  font-size: 50px;
+  margin-top: 10px;
+  box-shadow: inset 0px 0px 0px 5px #a8b5ab, -2.5px 5px 0px 5px #4a484b;
+  font-size: 100px;
+}
+
+.buttons {
+  font-family: Digital;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 10px;
+  margin-top: 50px;
+}
+
+.buttons button {
+  font-family: Poppins;
+  font-size: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ececec;
+  box-shadow: 0px 2px 0px 0px #b3b3b3, 0px 2px 2px 0px #484848;
+  font-weight: bolder;
+  padding: 10px 30px;
+}
+
+.buttons button:active {
+  box-shadow: inset 0px 0px 0px 100px #b3b3b3, 0px 2px 0px 0px #484848,
+    0px 2px 2px 0px #484848;
+  transition: 0.5ms ease;
+}
+
+#equals {
+  background-color: #f5a34d;
+  color: white;
+  box-shadow: 0px 2px 0px 0px #d7882c, 0px 5px 2px 0px #484848;
+}
+
+#equals:active {
+  box-shadow: inset 0px 0px 0px 100px #d7882c, 0px 2px 0px 0px #484848,
+    0px 2px 2px 0px #484848;
+}
